@@ -10,7 +10,7 @@ const pubsub = new PubSub()
 const server = new ApolloServer({
     typeDefs, 
     resolvers,
-    context: ({ req }) => ({ req, pubsubs })
+    context: ({ req }) => ({ req, pubsub })
 })
 
 mongoose.connect(MONGODB, {useNewUrlParser: true, useUnifiedTopology: true})
