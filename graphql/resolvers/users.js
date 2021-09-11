@@ -43,9 +43,9 @@ module.exports = {
                 token
             }
         },
-        async register(_, 
+        async register( 
             { 
-                registerInput: {username, email, password, confirmPassword}
+                registerInput: {email, password, confirmPassword}
             },
             ){
             // validate user data
